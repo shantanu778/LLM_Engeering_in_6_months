@@ -6,13 +6,12 @@
 #### Goal: Refresh ML, understand transformers, and get fluent with Python + Hugging Face.
 
 Week 1 (Foundations refresh)
-
+Building a basic Text Classification using Logistic Regression. To understand the classical ML pipeline. 
 	Day 1: Review Python for ML (functions, classes, list/dict comprehensions).
 	Day 2: Supervised learning recap (train/val/test, overfitting, metrics like accuracy/F1).
-	Day 3: Read transformer/attention overview + take notes.
-	Day 4: Implement a simple classifier in scikit‑learn on a text dataset.
-	Day 5: Reproduce that classifier with a simple neural net in PyTorch or TensorFlow.
-	Day 6: Read a “LLM engineer roadmap” overview and map which skills you already have vs need.
+	Day 3: Implement a simple classifier in scikit‑learn on a text dataset. First, I tokenize the text following two approaches: NLTK Tokenizer and BERT Tokenizer. Then apply two Feature Engineering approaches, TF-IDF and BERT. I pass each tokenized text into BERT model and extract the last layer representation and return the vector representation of the input text.
+	Finally, I train a logistic regression to classify the text.
+	Day 4: Reproduce that classifier with a simple neural net in PyTorch or TensorFlow.
 
 Week 2 (Transformers in practice)
 
