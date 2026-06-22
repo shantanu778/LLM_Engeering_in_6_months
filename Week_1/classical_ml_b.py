@@ -105,6 +105,17 @@ if __name__ == "__main__":
         print("Classification Report:")
         print(classification_report(y_test, y_pred))
         print(f"Accuracy: {accuracy_score(y_test, y_pred):.4f}")
+        # TF-IDF matrix shape: (17528, 54612)
+        # Classification Report:
+        #             precision    recall  f1-score   support
+
+        #         0       0.88      0.88      0.88      2186
+        #         1       0.88      0.88      0.88      2196
+
+        #  accuracy                           0.88      4382
+        # macro avg       0.88      0.88      0.88      4382
+        # weighted avg       0.88      0.88      0.88      4382
+        # Accuracy: 0.8784
 
     else:
         device = torch.device("mps") if torch.mps.is_available() else torch.device("cpu")
@@ -161,6 +172,18 @@ if __name__ == "__main__":
         print("Classification Report:")
         print(classification_report(y_test, y_pred))
         print(f"Accuracy: {accuracy_score(y_test, y_pred):.4f}")
+        # Embeddings shape: (17528, 768)
+        # Classification Report:
+        #             precision    recall  f1-score   support
+
+        #         0       0.85      0.83      0.84      2186
+        #         1       0.83      0.85      0.84      2196
+
+        #     accuracy                           0.84      4382
+        # macro avg       0.84      0.84      0.84      4382
+        # weighted avg       0.84      0.84      0.84      4382
+
+        # Accuracy: 0.8389
             
 
     
