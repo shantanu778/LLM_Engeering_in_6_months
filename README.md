@@ -1,5 +1,4 @@
 # Become an LLM Engineer in 6 Months
-
 ## A focused 24‑week plan works to become a Lan LLM Engineer in 6 months from the beginning. 
 
 ### Weeks 1–4: Core LLM & tooling
