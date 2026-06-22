@@ -1,5 +1,4 @@
-# virtual environment
-.venv/
+
 
 # Data Folders
 "Bangla Mental Health Dataset V2"
@@ -7,3 +6,16 @@
 "BSMDD_v3_textcleaned - 21K.xlsx"
 # Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
+
+
+# Ignore python virtual environments
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore large binary data, embeddings, and model files
+*.npy
+*.pt
+*.pth
+*.pkl
+data/
